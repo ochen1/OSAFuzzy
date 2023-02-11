@@ -9,6 +9,7 @@
   "main": "src/index.js",
   "dependencies": {
     "fuse.js": "^6.6.2",
+    "fuzzysort": "^2.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fuzzy-highlighter": "^1.1.1",
