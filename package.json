@@ -8,14 +8,14 @@
   ],
   "main": "src/index.js",
   "dependencies": {
-    "fuse.js": "6.4.1",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-fuzzy-highlighter": "0.3.1",
-    "react-scripts": "3.4.3"
+    "fuse.js": "^6.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-fuzzy-highlighter": "^1.1.1",
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    "typescript": "3.8.3"
+    "typescript": "^4.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
