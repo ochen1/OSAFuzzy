@@ -72,4 +72,10 @@
 .tags {
   color: #686980;
   font-size: 12px;
+  white-space: pre-wrap;
+}
+
+.name p {
+  margin: 0;
+  margin-bottom: 5px;
 }

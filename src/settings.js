@@ -11,9 +11,12 @@ const SettingsPage = () => {
       return;
     }
     const fuse = new Fuse(data, {
-      keys: ["name", "tags"]
+      keys: ["name"],
+      shouldSort: true,
+      includeScore: true,
     });
     const result = fuse.search(query);
+    console.log(result);
     const finalResult = [];
     if (result.length) {
       result.forEach((item) => {
@@ -26,18 +29,18 @@ const SettingsPage = () => {
   };
   return (
     <div>
-      <p className="title"> Technologies</p>
+      <p className="title">OSA Students</p>
       <div className="search-container">
         <input
           type="search"
           onChange={(e) => searchItem(e.target.value)}
-          placeholder="Search Technologies"
+          placeholder="Search Students"
         />
       </div>
 
       <div className="item-container">
         {searchData.map((item) => (
-          <Item {...item} key={item.name} />
+          <Item {...item} key={item.name + ":" + item.description} />
         ))}
       </div>
     </div>
